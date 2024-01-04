@@ -1,0 +1,173 @@
+.header {
+    background: #000C22;
+    font-family: 'Inter';
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.header-content {
+
+    display: flex;
+    align-items: center;
+    height: 65px;
+
+}
+.linked-header-pages{
+    display: flex;
+}
+
+.m-80 {
+    margin-right: 80px;
+}
+
+.header-text {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #F9F9F9;
+    display: flex;
+    align-items: center;
+}
+
+.m-40 {
+    margin-right: 40px;
+}
+
+
+.menu-open{
+ 
+    position: absolute;
+   
+    color: #000;
+    background-color: rgb(167, 172, 224);
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    height: calc(100vh - 65px);
+   
+    
+}
+
+.menu-open ul{
+    right: 0px;
+    padding:5px 10px;
+}
+ .menu-open ul li{
+    list-style-type: none;
+ }
+
+ .menu-open ul li a{
+    color:#000;
+ }
+
+@media(min-width:320px){
+
+    .m-40{
+        margin-right:10px;
+    }
+
+    .m-80 {
+        margin-right: 20px;
+    }
+    .linked-header-pages{
+        display: none;
+    }
+    .cta-btn-header {
+        display: none;
+    }
+
+}
+
+@media(min-width:575px){
+    .m-40{
+        margin-right:15px;
+    }
+    .m-80 {
+        margin-right: 20px;
+    }
+    .linked-header-pages{
+        display: none;
+    }
+    .cta-btn-header {
+        display: none;
+    }
+
+
+}
+
+@media(min-width:767px){
+    .m-40{
+        margin-right:20px;
+    }
+    .m-80 {
+        margin-right: 20px;
+    }
+    .linked-header-pages{
+        display: flex;
+    }
+    .cta-btn-header {
+        display: block;
+    }
+
+
+}
+
+@media(min-width:992px){
+    .m-40{
+        margin-right:20px;
+    }
+    .m-80 {
+        margin-right: 50px;
+    }
+    
+
+}
+
+@media(min-width:1024px){
+    .m-40{
+        margin-right:20px;
+    }
+    .m-80 {
+        margin-right: 50px;
+    }
+    
+
+}
+
+@media(min-width:1199px){
+    .m-40{
+        margin-right:20px;
+    }
+    .m-80 {
+        margin-right: 60px;
+    }
+    
+
+}
+@media(min-width:1260px){
+    .m-40{
+        margin-right:20px;
+    }
+    .m-80 {
+        margin-right: 60px;
+    }
+
+}
+
+@media(min-width:1280px){
+
+}
+
+@media(min-width:1400px){
+
+}

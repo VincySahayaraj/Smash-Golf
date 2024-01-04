@@ -1,0 +1,319 @@
+<app-header></app-header>
+<section class="home-banner-section">
+
+    <div class="video-section">
+        <div class="banner-video">
+            <img src="../../assets/images/golf-home-banner.png" alt="home-banner">
+        </div>
+
+        <div class="container homebanner-heading">
+            <div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+                <div class="welcome-heading-banner">
+                    <h4 class="h4-titles f9-color">Welcome to Smash</h4>
+                    <h2 class="h2-titles"><span class="white-color">Book your round of</span><br><span
+                            class="golf-online green-color">golf online 24/7</span></h2>
+                    <h5 class="h5-titles f9-color">Straightforward. Fast & Easy.</h5>
+
+                    <button class="cta-btn-header book-now-home">Book now</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-xs-12 modal-section">
+                <div class="availability-checking">
+                    <form class="availability-form">
+                        <div class="form-contents">
+                            <label class="form-labels">
+                                Where do you want to play
+                            </label>
+                            <select class="state-input" name="state" id="state">
+                                <option value="Select State" selected>Select State</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                            <label class="form-labels">
+                                Visit Date
+                            </label>
+                            <input type="text" value="Select Date" class="state-input" name="date" id="date"
+                                placeholder="Select Date" onfocus="(this.type='date')" />
+                        </div>
+                        <div class="search-submit-btn">
+                            <img src="../../assets/images/search-avail-btn.png" alt="search-btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="card-home-banner">
+    <div class="container">
+        <div class="dynamic-cards">
+            <div class="count-cards">
+                <div class="card-inner">
+                    <img src="../../assets/images/play-remote-icon.png" class="play-remote" alt="games-icon">
+                    <p class="count-games">800+</p>
+                    <p class="count-desc">PLAYS PER MONTH</p>
+                </div>
+            </div>
+
+
+            <div class="count-cards">
+                <div class="card-inner">
+                    <img src="../../assets/images/globe-icon.png" class="play-remote" alt="games-icon">
+                    <p class="count-games">2+</p>
+                    <p class="count-desc">LOCATIONS & COUNTING</p>
+                </div>
+            </div>
+
+            <div class="count-cards">
+                <div class="card-inner">
+                    <img src="../../assets/images/star-icon.png" class="play-remote" alt="games-icon">
+                    <p class="count-games">4.9/5</p>
+                    <p class="count-desc">AVG REVIEW RATING</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<section class="simulator-section">
+    <div class="container">
+        <div class="heading-simulator">
+            <h3 class="h3-titles m-0">Simulators</h3>
+            <p class="h4-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ante a
+                dolor Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="types-simulators">
+            <mat-tab-group >
+                <mat-tab label="Driving Range" class="tab-content">
+                    <div class="question-section">
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <img src="../../assets/images/accordion-image.png" class="accordion-image"
+                                alt="accordion-image">
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <div class="toggle-section-faq">
+
+                                <div class="toggle-contents-faq ">
+                                    <div class="toggle-texts-faq">
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen1}}">
+                                    <div class="question-toggle" (click)=toggleDisplayDiv1()>
+
+                                        <span class="toggle-title-faq">1.Key Features
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv1">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen2}}">
+
+                                    <div class="question-toggle" (click)=toggleDisplayDiv2()>
+                                        <span class="toggle-title-faq">2. System Composition
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv2">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen3}}">
+
+                                    <div class="question-toggle" (click)=toggleDisplayDiv3()>
+                                        <span class="toggle-title-faq">3. Suitable for
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv3">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Semi-Private">
+                    <div class="question-section">
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <img src="../../assets/images/accordion-image.png" class="accordion-image"
+                                alt="accordion-image">
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <div class="toggle-section-faq">
+
+                                <div class="toggle-contents-faq ">
+                                    <div class="toggle-texts-faq">
+                                        Content2
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen1}}">
+                                    <div class="question-toggle" (click)=toggleDisplayDiv1()>
+
+                                        <span class="toggle-title-faq">1.Key Features
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv1">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen2}}">
+
+                                    <div class="question-toggle" (click)=toggleDisplayDiv2()>
+                                        <span class="toggle-title-faq">2. System Composition
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv2">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen3}}">
+
+                                    <div class="question-toggle" (click)=toggleDisplayDiv3()>
+                                        <span class="toggle-title-faq">3. Suitable for
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv3">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Luxury Box"> Content 3
+
+                    <div class="question-section">
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <img src="../../assets/images/accordion-image.png" class="accordion-image"
+                                alt="accordion-image">
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <div class="toggle-section-faq">
+
+                                <div class="toggle-contents-faq ">
+                                    <div class="toggle-texts-faq">
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen1}}">
+                                    <div class="question-toggle" (click)=toggleDisplayDiv1()>
+
+                                        <span class="toggle-title-faq">1.Key Features
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv1">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen2}}">
+
+                                    <div class="question-toggle" (click)=toggleDisplayDiv2()>
+                                        <span class="toggle-title-faq">2. System Composition
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv2">
+
+
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="toggle-contents-faq {{displaydivopen3}}">
+
+                                    <div class="question-toggle" (click)=toggleDisplayDiv3()>
+                                        <span class="toggle-title-faq">3. Suitable for
+                                        </span>
+                                        <div class="plus-minus-icon"></div>
+                                    </div>
+                                    <div class="toggle-texts-faq" [hidden]="isShowDiv3">
+                                        <p class="ans-desc">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+</section>
+
+<section class="simulator-section">
+    <div class="container">
+        <div class="heading-simulator">
+            <h3 class="h3-titles m-0">Simulators</h3>
+            <p class="h4-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ante a
+                dolor Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</section>

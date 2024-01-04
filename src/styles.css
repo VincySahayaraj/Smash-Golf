@@ -1,0 +1,184 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.h2-titles{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 69.0149px;
+    line-height: 84px; 
+}
+
+.h4-titles{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30.194px;
+line-height: 37px;
+}
+
+.h5-titles{
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32.3507px;
+    line-height: 39px;
+}
+.h3-titles{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 44px;
+line-height: 53px;
+color: #fff;
+text-align: center;
+
+}
+
+.h4-contents{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 151.1%;
+/* or 30px */
+
+text-align: center;
+
+color: #FFFFFF;
+margin:40px 0px 100px 0px;
+}
+
+/* colors */
+.f9-color{
+    color: #F9F9F9;
+}
+
+.white-color{
+    color: #FFFFFF;
+}
+
+.green-color{
+
+color: #51D677;
+
+}
+.cta-btn-header {
+
+    background: #48D771;
+    border-radius: 50px;
+    border: none;
+    width: 125px;
+    height: 47px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    display: block;
+}
+
+@media (min-width: 200px) {
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .h2-titles{
+       
+        font-weight: 600;
+        font-size: 20.0149px;
+        line-height: 27px;
+        margin: 0px;
+    }
+    
+    .h4-titles{
+        
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.194px;
+    line-height: 20px;
+    margin: 0px;
+    }
+    
+    .h5-titles{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.3507px;
+        line-height: 29px;
+        margin: 0px;
+    }
+
+    .cta-btn-header{
+        height: 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 650px;
+        padding: 0;
+    }
+    .h2-titles{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 69.0149px;
+        line-height: 84px; 
+    }
+    
+    .h4-titles{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30.194px;
+    line-height: 37px;
+    }
+    
+    .h5-titles{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32.3507px;
+        line-height: 60px;
+    }
+    .cta-btn-header {
+
+        height: 47px;
+
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 900px ;
+        width:100%;
+    }
+}
+
+@media (min-width: 1260px) {
+    .container {
+        max-width: 1024px;
+        width:100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1352px !important ;
+        width:100%;
+    }
+}

@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="container">
+        <div class="header-main">
+            <div class="header-text logo-header"><span>Logo</span></div>
+            <div class="header-content header-text">
+                <div class="m-80 header-text linked-header-pages">
+                    <span class="m-40">
+                        Home
+                    </span>
+                    <span class="m-40">
+                        Teetime Booking
+                    </span>
+                    <span class="m-40">
+                        Simulators
+                    </span>
+                    <span class="linked-page-header m-40">
+                        Subscription
+                    </span>
+                </div>
+                <span class="m-40">Login</span>
+
+                <button class="cta-btn-header m-40">Register</button>
+                <img src="../../assets/images/hamburger-menu.png" class="hamburger-menu" (click)="openMenu()"
+                    alt="hamburger-menu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu-open" [hidden]="isShowMenu">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#teetimebooking">Tee time booking</a></li>
+        <li><a href="#simulators">Simulators</a></li>
+        <li><a href="#subscription">subscription</a></li>
+    </ul>
+</div>
